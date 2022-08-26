@@ -1,12 +1,20 @@
 {
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true
   },
-   "extends": [
+  "extends": [
     "next/core-web-vitals",
-    "airbnb-typescript"
+    "airbnb-typescript",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "rules": {
+    "indent": ["error", 4],
+
+    "linebreak-style": ["error", "unix"],
+    "function-paren-newline": ["error", "multiline"]
   }
 }
