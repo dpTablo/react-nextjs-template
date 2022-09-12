@@ -31,6 +31,9 @@
   },
   "rules": {
     "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/indent": ["error", 4]
+    "@typescript-eslint/indent": ["error", 4],
+    "prettier/prettier": ["error", {
+      "endOfLine": "auto"
+    }]
   }
 }
