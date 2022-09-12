@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import LoginPage from '@pages/login.page';
+import LoginPage from './login.page';
 import { LoginService } from '../service/LoginService';
 
 /* Router Mocking */
