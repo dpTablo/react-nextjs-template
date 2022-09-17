@@ -1,20 +1,20 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import LoginPage from './login.page';
-import { LoginService } from '../service/LoginService';
+import LoginPage from '../login.page';
+import { LoginService } from '@service/LoginService';
 
 /* Router Mocking */
-import mockNextRouter from '../test/NextMockRouter';
+import mockNextRouter from '../../test/NextMockRouter';
 
-jest.mock('../service/LoginService');
+jest.mock('../../service/LoginService');
 
 describe('Login', () => {
     beforeAll(() => {});
 
-    it('cobosys 계정 로그인 성공', async () => {
+    it('로그인 성공', async () => {
         // given
-        const userId = 'cobosys';
-        const password = 'cobosys';
+        const userId = 'user1';
+        const password = '1234';
 
         const loginService: LoginService = {
             login: jest.fn(),
