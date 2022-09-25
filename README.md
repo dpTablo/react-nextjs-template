@@ -25,6 +25,9 @@ mocking도 가급적이면 위의 두 라이브러리에서 제공되는 기능�
 
 E2E 테스트에 해당하는 것은 cypress 테스트 케이스로 작성한다.
 
+### next-router-mock
+nextjs의 router mocking 을 위하여 [next-router-mock](https://www.npmjs.com/package) 라이브러리를 사용하였다.
+
 ## MSW
 MSW 라이브러리를 이용한 API Mocking 을 적용하였다.
 
@@ -37,11 +40,7 @@ env 내의 `NEXT_PUBLIC_API_MOCKING` 속성을 `enable`로 설정하고, NODE_EN
 - scss
 - styled-components
 - tailwindCSS
-- [tailwind-Styled-Component](https://www.npmjs.com/package/tailwind-styled-components)
 
-twin.macro 는 next.js 12는 Rust 기반의 SWC 컴파일러를 사용한다. twin.macro가 별도의 우회적 셋팅을 하지 않으면 컴파일 에러가 발생하였다.
-
-twin.macro 라이브러리를 적용하지 않고 tailwind-Styled-Component를 사용하였다.
 
 ### tailwind-styled-component
 github 문서 참고
