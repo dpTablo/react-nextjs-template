@@ -1,7 +1,6 @@
 import React, { useState, FC, ReactElement } from 'react';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
-import twc from 'tailwind-styled-components';
 
 import loginPageStyled from './login.page.module.scss';
 import { LoginService } from '../service/LoginService';
@@ -15,13 +14,9 @@ interface LoginState {
     password: string;
 }
 
-const LoginPage = twc.div`
-    flex
-    h-screen
-    items-screen
-    md:flex-row
-    flex-col-reverse 
-`;
+const LoginPage = styled.div.attrs({
+    className: 'flex h-screen items-screen md:flex-row flex-col-reverse',
+})``;
 
 /** FC 페이지 예제 */
 const Login: FC<LoginProps> = ({ loginService }): ReactElement => {

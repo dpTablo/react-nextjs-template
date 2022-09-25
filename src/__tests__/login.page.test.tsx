@@ -1,10 +1,13 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
+import singletonRouter from 'next/router';
+
 import LoginPage from '@pages/login.page';
 import { LoginService } from '@service/LoginService';
 
 /* Router Mocking */
-import mockNextRouter from '../test/NextMockRouter';
+jest.mock('next/router', () => require('next-router-mock'));
+jest.mock('next/dist/client/router', () => require('next-router-mock'));
 
 jest.mock('../service/LoginService');
 
@@ -16,6 +19,8 @@ describe('Login', () => {
         const userId = 'user1';
         const password = '1234';
 
+        jest.spyOn(singletonRouter, 'push');
+
         const loginService: LoginService = {
             login: jest.fn(),
         };
@@ -23,10 +28,6 @@ describe('Login', () => {
         const { getByLabelText } = render(
             <LoginPage loginService={loginService} />,
         );
-
-        const mockRouter = mockNextRouter({});
-        jest.spyOn(mockRouter, 'push');
-        jest.spyOn(loginService, 'login');
 
         // when
         const userIdInput = getByLabelText('userId');
@@ -42,6 +43,6 @@ describe('Login', () => {
 
         // then
         expect(loginService.login).toHaveBeenCalledWith(userId, password);
-        expect(mockRouter.push).toHaveBeenCalledWith('/dashboard');
+        expect(singletonRouter.push).toHaveBeenCalledWith('/dashboard');
     });
 });
