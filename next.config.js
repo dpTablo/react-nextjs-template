@@ -2,6 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    compiler: {
+        styledComponents: true,
+    },
     pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
     webpack: (config) => {
         config.resolve.fallback = { fs: false };
