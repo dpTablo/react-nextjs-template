@@ -1,12 +1,12 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import LoginPage from '../login.page';
+import LoginPage from '@pages/login.page';
 import { LoginService } from '@service/LoginService';
 
 /* Router Mocking */
-import mockNextRouter from '../../test/NextMockRouter';
+import mockNextRouter from '../test/NextMockRouter';
 
-jest.mock('../../service/LoginService');
+jest.mock('../service/LoginService');
 
 describe('Login', () => {
     beforeAll(() => {});
