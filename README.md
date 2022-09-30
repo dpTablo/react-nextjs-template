@@ -41,11 +41,16 @@ env 내의 `NEXT_PUBLIC_API_MOCKING` 속성을 `enable`로 설정하고, NODE_EN
 - styled-components
 - tailwindCSS
 
+### tailwindCSS와 다른 스타일 라이브러리와의 상호운용성
+tailwindCSS 와 다른 스타일 라이브러리를 혼용하여 사용하는 경우에 CSS 주입 순서의 오류로 인하여 원하지 않는 렌더링 결과를 얻을 수 있다.
 
-### tailwind-styled-component
-github 문서 참고
+스타일 라이브러리의 특성마다 이 부분에 대하여 설정이 필요하다.
 
-https://github.com/MathiasGilson/tailwind-styled-component
+mui 라이브러리에 대해서는 아래 문서를 참조하여 이 부분을 해결하였다.
+
+mui 가이드 문서
+
+https://mui.com/material-ui/guides/interoperability/#tailwind-css
 
 # 2. IDE, 개발환경 설정
 ## stylelint
@@ -76,3 +81,30 @@ git config --global core.autocrlf auto
 ## Install Tailwind CSS with Next.js
 참조 : [공식문서 (Install Tailwind CSS with Next.js) ](https://tailwindcss.com/docs/guides/nextjs)
 
+# 4. 배포
+## pm2
+ecosystem.config.js pm2로 실행하기 위한 설정이 정의되어 있다.
+
+[실행방법]
+--env: NODE_ENV 지정
+
+```bash
+pm2 --env production start ecosystem.config.js
+```
+
+## docker
+### docker build
+프로젝트 root 경로에서 아래 명령어를 실행한다.
+```bash
+docker build -t react-nextjs-template:1.0.0 -f docker/Dockerfile-production .
+```
+
+### docker compose
+docker/docker-compose.yml 아래 두개의 서비스에 대한 docker 컨테이너를 생성한다.
+- nextjs: docker build 포함
+- nginx: nextjs의 프록시역할
+
+프로젝트 root 경로에서 아래 명령어를 실행한다.
+```bash
+docker-compose -f docker/docker-compose.yml up --build -d
+```
