@@ -1,0 +1,765 @@
+{
+  "aminoAcid": {
+    "alt": "L",
+    "ref": "P"
+  },
+  "frequency": {
+    "alspac": 0.3435391800726518,
+    "twinsuk": null,
+    "uk10k": 0.3454112668606189
+  },
+  "conservationScores": {
+    "gerp": {
+      "prediction": "Deleterious",
+      "nr": 5.04,
+      "rs": 5.04,
+      "rsRankscore": 0.67293,
+      "category": "Pathogenic"
+    },
+    "fitConsGM12878": {
+      "prediction": null,
+      "category": null,
+      "score": 0.724815,
+      "rankscore": 0.89359,
+      "confidenceValue": 0
+    },
+    "fitConsH1hESC": {
+      "prediction": null,
+      "category": null,
+      "score": 0.724815,
+      "rankscore": 0.87919,
+      "confidenceValue": 0
+    },
+    "fitConsHUVEC": {
+      "prediction": null,
+      "category": null,
+      "score": 0.553451,
+      "rankscore": 0.17756,
+      "confidenceValue": 0
+    },
+    "fitConsIntegrated": {
+      "prediction": null,
+      "category": null,
+      "score": 0.706548,
+      "rankscore": 0.73137,
+      "confidenceValue": 0
+    },
+    "phastCons100way": {
+      "category": null,
+      "prediction": null,
+      "vertebrate": 1,
+      "vertebrateRankscore": 0.71638
+    },
+    "phastCons17way": {
+      "category": null,
+      "prediction": null,
+      "primate": 0.989,
+      "primateRankscore": 0.64315
+    },
+    "phastCons30way": {
+      "category": null,
+      "prediction": null,
+      "mammalian": 0.978,
+      "mammalianRankscore": 0.47047
+    },
+    "phyloP100way": {
+      "category": null,
+      "prediction": null,
+      "vertebrate": 4.247,
+      "vertebrateRankscore": 0.58542
+    },
+    "phyloP17way": {
+      "category": null,
+      "prediction": null,
+      "primate": -0.092,
+      "primateRankscore": 0.16129
+    },
+    "phyloP30way": {
+      "category": null,
+      "prediction": null,
+      "mammalian": 0.326,
+      "mammalianRankscore": 0.2915
+    },
+    "siPhy29way": {
+      "category": null,
+      "prediction": null,
+      "logodds": "9.647",
+      "logoddsRankscore": "0.39039",
+      "pi": {
+        "a": 0.9207,
+        "t": 0,
+        "g": 0.0793,
+        "c": 0
+      }
+    },
+    "bstatistic": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "convertedRankscore": 0.75131
+    }
+  },
+  "metaScores": {
+    "metaLR": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 0,
+      "rankscore": 0.00011
+    },
+    "metaSVM": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": -0.9367,
+      "rankscore": 0.43134,
+      "reliabilityIndex": 9
+    }
+  },
+  "individualPredictions": {
+    "bayesDelAddAF": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": -0.53869,
+      "rankscore": 0.00341
+    },
+    "bayesDelNoAF": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": -0.402747,
+      "rankscore": 0.33066
+    },
+    "cadd": {
+      "category": null,
+      "prediction": null,
+      "phredScore": null,
+      "raw": null,
+      "rankscore": null,
+      "hg19phredScore": null,
+      "hg19Raw": null,
+      "hg19Rankscore": null
+    },
+    "clinPred": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null
+    },
+    "dann": {
+      "category": null,
+      "prediction": null,
+      "score": 0.884001224223416,
+      "rankscore": 0.17946
+    },
+    "eigenPC": {
+      "category": null,
+      "prediction": null,
+      "rawCoding": -0.666289485887707,
+      "rawCodingRankscore": 0.17807,
+      "phredCodingScore": 0.9484397
+    },
+    "eigen": {
+      "category": null,
+      "prediction": null,
+      "rawCoding": -1.04511808985481,
+      "rawCodingRankscore": 0.07684,
+      "phredCodingScore": 0.357776
+    },
+    "fathmmMKL": {
+      "category": "Benign",
+      "codingPrediction": "Neutral",
+      "codingScore": 0.01658,
+      "codingRankscore": 0.05317,
+      "codingGroup": "AEFDGBIJ"
+    },
+    "fathmmXF": {
+      "category": "Benign",
+      "codingPrediction": "Neutral",
+      "codingScore": 0.053536,
+      "codingRankscore": 0.09655
+    },
+    "genoCanyon": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null
+    },
+    "linsight": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null
+    },
+    "lrt": {
+      "category": "Benign",
+      "prediction": "Neutral",
+      "score": 0.00134,
+      "convertedRankscore": 0.39379,
+      "omega": 0
+    },
+    "mutationTaster": [
+      {
+        "category": "Benign",
+        "prediction": "polymorphism_automatic",
+        "score": 0.996297,
+        "convertedRankscore": 0.58761,
+        "model": "simple_aae",
+        "aae": "P824L"
+      },
+      {
+        "category": "Benign",
+        "prediction": "polymorphism_automatic",
+        "score": 0.996297,
+        "convertedRankscore": 0.58761,
+        "model": "simple_aae",
+        "aae": "P871L"
+      },
+      {
+        "category": "Benign",
+        "prediction": "polymorphism_automatic",
+        "score": 0.996698,
+        "convertedRankscore": 0.58761,
+        "model": "simple_aae",
+        "aae": "P871L"
+      },
+      {
+        "category": "Benign",
+        "prediction": "polymorphism_automatic",
+        "score": 0.996297,
+        "convertedRankscore": 0.58761,
+        "model": "simple_aae",
+        "aae": "P575L"
+      },
+      {
+        "category": "Benign",
+        "prediction": "polymorphism_automatic",
+        "score": 2.19253e-13,
+        "convertedRankscore": 0.58761,
+        "model": "without_aae",
+        "aae": ""
+      }
+    ],
+    "mutPred": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null,
+      "protid": "",
+      "aachange": "",
+      "top5Features": null
+    },
+    "primateAI": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 0.416683584452,
+      "rankscore": 0.27381
+    },
+    "mcap": {
+      "category": null,
+      "prediction": "",
+      "score": null,
+      "rankscore": null
+    },
+    "aloft": {
+      "fractionTranscriptsAffected": null,
+      "prediction": "",
+      "category": null,
+      "confidence": ".",
+      "probailityDominant": null,
+      "probailityRecessive": null,
+      "probailityTolerant": null
+    },
+    "deogen2": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 0.127308,
+      "rankscore": 0.45426
+    },
+    "fathmm": {
+      "category": "Benign",
+      "prediction": null,
+      "score": null,
+      "convertedRankscore": 0.63403
+    },
+    "listS2": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 0.607939,
+      "rankscore": 0.22935
+    },
+    "mutationAssessor": {
+      "category": "Benign",
+      "prediction": "Neutral",
+      "score": -3.445,
+      "rankscore": 0.00004
+    },
+    "mpc": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": 0.09262
+    },
+    "mvp": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null
+    },
+    "polyphen2HDIV": {
+      "category": null,
+      "prediction": "",
+      "score": null,
+      "rankscore": null
+    },
+    "polyphen2HVAR": {
+      "category": null,
+      "prediction": "",
+      "score": null,
+      "rankscore": null
+    },
+    "provean": {
+      "category": "Benign",
+      "prediction": "Neutral",
+      "score": 5.74,
+      "convertedRankscore": 0.00012
+    },
+    "sift": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 1,
+      "convertedRankscore": 0.00964
+    },
+    "sift4G": {
+      "category": "Benign",
+      "prediction": "Tolerated",
+      "score": 1,
+      "convertedRankscore": 0.01155
+    },
+    "vest4": {
+      "category": null,
+      "prediction": null,
+      "score": null,
+      "rankscore": null
+    }
+  },
+  "transcriptList": [
+    {
+      "transcriptId": "ENST00000357654",
+      "domain": null,
+      "canonical": true,
+      "appris": "alternative2",
+      "codonDegeneracy": 0,
+      "codonPos": 2,
+      "metaScores": {
+        "metaRNN": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 9.915395e-7,
+          "rankscore": 0.00003
+        },
+        "revel": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      },
+      "individualPredictions": {
+        "aloft": {
+          "fractionTranscriptsAffected": null,
+          "prediction": "",
+          "category": null,
+          "confidence": ".",
+          "probailityDominant": null,
+          "probailityRecessive": null,
+          "probailityTolerant": null
+        },
+        "deogen2": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 0.127308,
+          "rankscore": 0.45426
+        },
+        "fathmm": {
+          "category": "Benign",
+          "prediction": null,
+          "score": null,
+          "convertedRankscore": 0.63403
+        },
+        "listS2": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 0.607939,
+          "rankscore": 0.22935
+        },
+        "mutationAssessor": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": -3.445,
+          "rankscore": 0.00004
+        },
+        "mpc": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": 0.09262
+        },
+        "mvp": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HDIV": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HVAR": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "provean": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": 5.74,
+          "convertedRankscore": 0.00012
+        },
+        "sift": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.00964
+        },
+        "sift4G": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.01155
+        },
+        "vest4": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      }
+    },
+    {
+      "transcriptId": "ENST00000471181",
+      "domain": null,
+      "canonical": false,
+      "appris": "principal4",
+      "codonDegeneracy": 0,
+      "codonPos": 2,
+      "metaScores": {
+        "metaRNN": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 9.915395e-7,
+          "rankscore": 0.00003
+        },
+        "revel": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      },
+      "individualPredictions": {
+        "aloft": {
+          "fractionTranscriptsAffected": null,
+          "prediction": "",
+          "category": null,
+          "confidence": ".",
+          "probailityDominant": null,
+          "probailityRecessive": null,
+          "probailityTolerant": null
+        },
+        "deogen2": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": 0.45426
+        },
+        "fathmm": {
+          "category": "Benign",
+          "prediction": null,
+          "score": null,
+          "convertedRankscore": 0.63403
+        },
+        "listS2": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 0.607939,
+          "rankscore": 0.22935
+        },
+        "mutationAssessor": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": -3.445,
+          "rankscore": 0.00004
+        },
+        "mpc": {
+          "category": "Benign",
+          "prediction": "Benign",
+          "score": 0.0821448641759,
+          "rankscore": 0.09262
+        },
+        "mvp": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HDIV": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HVAR": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "provean": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": 5.84,
+          "convertedRankscore": 0.00012
+        },
+        "sift": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.00964
+        },
+        "sift4G": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.01155
+        },
+        "vest4": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      }
+    },
+    {
+      "transcriptId": "ENST00000493795",
+      "domain": null,
+      "canonical": false,
+      "appris": "",
+      "codonDegeneracy": 0,
+      "codonPos": 2,
+      "metaScores": {
+        "metaRNN": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 9.915395e-7,
+          "rankscore": 0.00003
+        },
+        "revel": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      },
+      "individualPredictions": {
+        "aloft": {
+          "fractionTranscriptsAffected": null,
+          "prediction": "",
+          "category": null,
+          "confidence": ".",
+          "probailityDominant": null,
+          "probailityRecessive": null,
+          "probailityTolerant": null
+        },
+        "deogen2": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": 0.45426
+        },
+        "fathmm": {
+          "category": "Benign",
+          "prediction": null,
+          "score": null,
+          "convertedRankscore": 0.63403
+        },
+        "listS2": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 0.607939,
+          "rankscore": 0.22935
+        },
+        "mutationAssessor": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": 0.00004
+        },
+        "mpc": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": 0.09262
+        },
+        "mvp": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HDIV": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HVAR": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "provean": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": 5.7,
+          "convertedRankscore": 0.00012
+        },
+        "sift": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.00964
+        },
+        "sift4G": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.01155
+        },
+        "vest4": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      }
+    },
+    {
+      "transcriptId": "ENST00000354071",
+      "domain": null,
+      "canonical": false,
+      "appris": "",
+      "codonDegeneracy": 0,
+      "codonPos": 2,
+      "metaScores": {
+        "metaRNN": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 9.915395e-7,
+          "rankscore": 0.00003
+        },
+        "revel": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      },
+      "individualPredictions": {
+        "aloft": {
+          "fractionTranscriptsAffected": null,
+          "prediction": "",
+          "category": null,
+          "confidence": ".",
+          "probailityDominant": null,
+          "probailityRecessive": null,
+          "probailityTolerant": null
+        },
+        "deogen2": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": 0.45426
+        },
+        "fathmm": {
+          "category": "Benign",
+          "prediction": null,
+          "score": null,
+          "convertedRankscore": 0.63403
+        },
+        "listS2": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 0.607939,
+          "rankscore": 0.22935
+        },
+        "mutationAssessor": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": 0.00004
+        },
+        "mpc": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": 0.09262
+        },
+        "mvp": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HDIV": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "polyphen2HVAR": {
+          "category": null,
+          "prediction": "",
+          "score": null,
+          "rankscore": null
+        },
+        "provean": {
+          "category": "Benign",
+          "prediction": "Neutral",
+          "score": 5.71,
+          "convertedRankscore": 0.00012
+        },
+        "sift": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.00964
+        },
+        "sift4G": {
+          "category": "Benign",
+          "prediction": "Tolerated",
+          "score": 1,
+          "convertedRankscore": 0.01155
+        },
+        "vest4": {
+          "category": null,
+          "prediction": null,
+          "score": null,
+          "rankscore": null
+        }
+      }
+    }
+  ]
+}

@@ -11,7 +11,14 @@ function IndexPage() {
     const user = useSelector((state: RootState) => state.user.value);
 
     const updateTabloUser = useCallback(() => {
-        dispatch(setUserValue({ userId: 'tablo', password: '1234' }));
+        dispatch(
+            setUserValue({
+                userId: 'tablo',
+                password: '1234',
+                name: '',
+                email: '',
+            }),
+        );
     }, []);
 
     return (

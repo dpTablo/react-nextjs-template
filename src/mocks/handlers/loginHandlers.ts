@@ -2,7 +2,7 @@ import { rest } from 'msw';
 
 export const loginHandlers = [
     rest.get(
-        'https://api.baroder.co.kr/v1/login',
+        'https://api.dptablo.com/v1/login',
         (request, response, context) => {
             return response(
                 context.status(200),
