@@ -3,5 +3,6 @@ describe('dbnSfpExample Page Spec', () => {
         cy.visit('http://localhost:3000/dbnSfpExample');
         cy.get('.requestButton').click();
         cy.get('[data-id="alt"]').contains('L');
+        cy.contains('alspac : 0.3435391800726518');
     });
 });
