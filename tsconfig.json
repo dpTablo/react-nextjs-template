@@ -24,7 +24,7 @@
       "@store/*": ["src/store/*"]
     },
     "baseUrl": "",
-    "types": ["cypress", "node", "jest"]
+    "types": ["node", "jest", "cypress"]
   },
   "include": [
     "next-env.d.ts",
@@ -32,6 +32,7 @@
     "**/*.tsx",
     "**/*.test.ts",
     "**/*.test.tsx",
+    "**/*.cy.ts",
     "next.config.js",
     "jest.config.js",
     "webpack.config.js",

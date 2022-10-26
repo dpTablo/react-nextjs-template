@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { NextPage } from 'next';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 import DbnSfp from '../model/dbnSfp/DbnSfp';
 import DefaultDbnSfpService from '@service/DefaultDbnSfpService';
