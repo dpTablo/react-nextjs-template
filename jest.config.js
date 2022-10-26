@@ -22,6 +22,8 @@ module.exports = {
         // Handle module aliases
         '^@pages/(.*)$': '<rootDir>src/pages/$1',
         '^@components/(.*)$': '<rootDir>src/components/$1',
+        '^@service/(.*)$': '<rootDir>src/service/$1',
+        '^@mocks/(.*)$': '<rootDir>src/mocks/$1',
     },
     setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
     testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
