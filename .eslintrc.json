@@ -6,7 +6,8 @@
     "react-hooks",
     "@typescript-eslint",
     "prettier",
-    "import"
+    "import",
+    "eslint-plugin-cypress"
   ],
   "env": {
     "jest": true,
@@ -19,7 +20,8 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "airbnb-typescript"
+    "airbnb-typescript",
+    "plugin:cypress/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",

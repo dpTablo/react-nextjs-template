@@ -23,12 +23,15 @@
       "@service/*": ["src/service/*"],
       "@store/*": ["src/store/*"]
     },
-    "baseUrl": ""
+    "baseUrl": "",
+    "types": ["cypress", "node", "jest"]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
     "next.config.js",
     "jest.config.js",
     "webpack.config.js",
