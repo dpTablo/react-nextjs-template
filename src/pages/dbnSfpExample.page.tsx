@@ -23,12 +23,13 @@ const RequestButton = styled.button.attrs({
     className: 'requestButton p-2 border-2 border-white bg-gray-500',
 })``;
 
-const DbnSfpExamplePage: NextPage<DbnSfpExamplePageProps> = ({
-    dbnSfpService = new DefaultDbnSfpService(),
-}) => {
+const DbnSfpExamplePage = (props: DbnSfpExamplePageProps) => {
     const [dbnSfpData, setDbnSfpData] = useState<DbnSfp>();
 
     const getSampleData = async () => {
+        const dbnSfpService = props.dbnSfpService
+            ? props.dbnSfpService
+            : new DefaultDbnSfpService(); // store 를 이용하여 singleton 객체를 활용한다는 것을 가정한다. (인스턴스 생성으로 예제 작성)
         const data = await dbnSfpService.getSample();
         setDbnSfpData(data);
     };
@@ -36,7 +37,10 @@ const DbnSfpExamplePage: NextPage<DbnSfpExamplePageProps> = ({
     return (
         <div>
             <div>
-                <RequestButton onClick={getSampleData}>
+                <RequestButton
+                    onClick={getSampleData}
+                    aria-label="requestButton"
+                >
                     샘플데이터 요청
                 </RequestButton>
             </div>
@@ -74,9 +78,4 @@ const DbnSfpExamplePage: NextPage<DbnSfpExamplePageProps> = ({
         </div>
     );
 };
-
-DbnSfpExamplePage.propTypes = {
-    dbnSfpService: PropTypes.object,
-};
-
 export default DbnSfpExamplePage;
