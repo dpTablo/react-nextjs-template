@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2016",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -14,18 +18,35 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "isolatedModules": false,
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@styles/*": ["src/styles/*"],
-      "@pages/*": ["src/pages/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@mocks/*": ["src/mocks/*"],
-      "@service/*": ["src/service/*"],
-      "@store/*": ["src/store/*"]
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@mocks/*": [
+        "src/mocks/*"
+      ],
+      "@service/*": [
+        "src/service/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ]
     },
     "baseUrl": "",
-    "types": ["node", "jest", "cypress"]
+    "types": [
+      "node",
+      "jest",
+      "cypress"
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -40,5 +61,7 @@
     "tailwind.config.js",
     "ecosystem.config.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
