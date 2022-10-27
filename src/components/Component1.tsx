@@ -5,7 +5,7 @@ interface Component1Props {
 }
 
 const Component1: FC<Component1Props> = ({ name = '' }): ReactElement => {
-    const [nameState, setNameState] = useState(name);
+    const [nameState] = useState(name);
 
     return <div>${nameState}</div>;
 };

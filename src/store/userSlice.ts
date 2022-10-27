@@ -9,6 +9,8 @@ const initialState: UserState = {
     value: {
         userId: '',
         password: '',
+        email: '',
+        name: '',
     },
 };
 
