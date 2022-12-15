@@ -8,7 +8,8 @@
     "start": "next start",
     "test": "jest --watch",
     "lint": "next lint",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "start-container": "pm2 --env production start ecosystem.config.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
